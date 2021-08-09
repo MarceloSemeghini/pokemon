@@ -63,6 +63,7 @@ h1{
     width: 13em;
 }
 .modal_Background{
+    z-index: +100;
     position: fixed;
     left: 0;
     top: 0;
@@ -91,7 +92,6 @@ h1{
     to {width: 50%; color: rgba(255, 255, 255, 1)}
 }
 .right, .left{
-    z-index: -1;
     margin: 0.2em;
     padding: 0.4em;
     border: 0.em;
