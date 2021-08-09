@@ -81,15 +81,16 @@ h1{
     align-items: center;
     border: 0.1em solid #1a36b0;
     border-radius: 0.5em;
-    width: 50%;
+    min-width: 50%;
+    max-width: 95%;
     min-height: 10%;
     padding: 2em;
     animation-name: pop_up;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
 }
 @keyframes pop_up {
-    from {width: 25%; color: rgba(255, 255, 255, 0);}
-    to {width: 50%; color: rgba(255, 255, 255, 1)}
+    from {color: rgba(255, 255, 255, 0);}
+    to {color: rgba(255, 255, 255, 1)}
 }
 .right, .left{
     margin: 0.2em;
