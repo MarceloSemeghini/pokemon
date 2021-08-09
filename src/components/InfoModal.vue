@@ -1,6 +1,6 @@
 <template v-if="!loading">
     <div v-if="modalOpen" class="modal_Background">
-        <div class="infoModal">
+        <div class="infoModal"  :style="`background-color:#${color}`">
             <img :src="pokemonInfo.sprites.front_default" alt="">
             <div>
                 <h2>Games: {{filterGames()}}</h2>
@@ -21,6 +21,7 @@ export default{
     },
     props: {
         pokemonInfo: Object,
+        color: String,
         modalOpen: Boolean
     },
     async created() {

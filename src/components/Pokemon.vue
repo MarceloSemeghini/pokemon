@@ -2,7 +2,7 @@
     <div v-if="!loading" class="PokemonChart" @click="onClick()" :style="`background-color:#${filterType()}`">
         <img :src="pokemonInfo.sprites.front_default" alt="">
         <h1>{{pokemon.name}}</h1>
-        <InfoModal :pokemonInfo="pokemonInfo" :modalOpen="modalOpen"/>
+        <InfoModal :pokemonInfo="pokemonInfo" :modalOpen="modalOpen" :color="filterType()"/>
     </div>
 </template>
 
